@@ -1,7 +1,6 @@
-using bank_i_ystal.DTO;
+﻿using bank_i_ystal.DTO;
 using bank_i_ystal.Models;
 using bank_i_ystal.Repositories.Interfaces;
-
 namespace bank_i_ystal.Repositories;
 
 public class AccountRepository : IAccountRepository

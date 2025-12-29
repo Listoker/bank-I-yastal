@@ -1,4 +1,4 @@
-using bank_i_ystal.DTO;
+﻿using bank_i_ystal.DTO;
 using bank_i_ystal.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -45,7 +45,6 @@ public class AccountsController : ControllerBase
         {
             return BadRequest("Процентная ставка обязательна для депозитных и кредитных счетов");
         }
-        
         var account = _repository.CreateAccount(dto);
         return CreatedAtAction(nameof(GetAccount), new { id = account.Id }, account);
     }

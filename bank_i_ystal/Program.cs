@@ -1,4 +1,4 @@
-using bank_i_ystal.Middleware;
+п»їusing bank_i_ystal.Middleware;
 using bank_i_ystal.Repositories;
 using bank_i_ystal.Repositories.Interfaces;
 using Microsoft.OpenApi.Models;
@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "Account Service API",
         Version = "1984",
-        Description = "Микросервис 'ну с богом' для управления банковскими счетами"
+        Description = "РњРёРєСЂРѕСЃРµСЂРІРёСЃ 'РЅСѓ СЃ Р±РѕРіРѕРј' РґР»СЏ СѓРїСЂР°РІР»РµРЅРёСЏ Р±Р°РЅРєРѕРІСЃРєРёРјРё СЃС‡РµС‚Р°РјРё"
     });
 });
 
@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
         c.InjectStylesheet("/swagger-ui/custom.css");
     });
 }
+
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseAuthorization();

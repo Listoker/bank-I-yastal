@@ -1,5 +1,4 @@
-using System.ComponentModel.DataAnnotations;
-
+﻿using System.ComponentModel.DataAnnotations;
 namespace bank_i_ystal.DTO;
 
 public class TransferDto
