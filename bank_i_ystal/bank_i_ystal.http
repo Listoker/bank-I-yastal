@@ -1,0 +1,6 @@
+@bank_i_ystal_HostAddress = http://localhost:5062
+
+GET {{bank_i_ystal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

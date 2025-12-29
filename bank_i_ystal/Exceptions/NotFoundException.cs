@@ -1,0 +1,6 @@
+namespace bank_i_ystal.Exceptions;
+
+public class NotFoundException : Exception
+{
+    public NotFoundException(string message) : base(message) { }
+}
